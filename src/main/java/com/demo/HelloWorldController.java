@@ -22,7 +22,7 @@ public class HelloWorldController {
 		public ResponseEntity<String> helloWorld()  
 				 
 		{
-			System.out.println("****** dentro HelloWorld Controller dopo  *******");
+			System.out.println("****** dentro HelloWorld Controller 2  *******");
 			logger.info("dentro HelloWorld");
 			logger.debug("dentro DEBUG HelloWorld");
 	
