@@ -1,0 +1,38 @@
+# ==============================================================
+# = DemoTre
+# ==============================================================
+
+server:
+  port: 8082
+
+spring:
+  application:
+    name: DemoTre
+
+
+# ==============================================================
+# = Proprietà Livello Log
+# = Default ERROR, WARN e INFO 
+# = Levels: TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF
+# ============================================================== 
+
+logging:
+  file:
+    name: DemoTre.log
+    max-size: 1MB
+  pattern:
+    file: "%d{ dd-MM-yyyy } [%thread] %-5level %logger{36} - %msg%n"
+    #console: "%d{dd-MM-yyyy HH:mm:ss} - %msg%n"
+    
+  # Livello del Log generale
+  level:
+   root: DEBUG
+  # Livello di log specifico
+   org.springframework.security: DEBUG
+   org.hibernate: INFO
+   org.springframework.web: INFO
+
+    
+
+  
+
